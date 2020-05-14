@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/*** -----------Commons ----------------- ***/
+.list-style-none {
+  list-style: none !important; }
+
+h1 {
+  font-size: 42px; }
+
+.capitalize {
+  text-transform: capitalize !important; }
+
+.square {
+  height: 0.75rem;
+  width: 0.75rem;
+  display: inline-block;
+  background: #f67C92;
+  margin: 15px 0; }
+
+.line {
+  line-height: .4; }
+  .line .line-1 {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    background: #f67C92;
+    display: inline-block; }
+  .line .line-2 {
+    width: 5rem;
+    height: 0.0625rem;
+    background: #f67C92;
+    display: inline-block; }
+  .line .line-3 {
+    width: 3.75rem;
+    height: 0.0625rem;
+    background: #f67C92;
+    display: inline-block; }
+
+.common-btn {
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 0.125rem solid #f67C92;
+  font-weight: bold;
+  cursor: pointer; }
+
+.container {
+  margin-right: 6.25rem;
+  margin-left: 6.25rem; }
+
+#header {
+  height: 100vh;
+  background-image: url("../assets/images/background.png");
+  background-position: center;
+  background-size: cover; }
+  #header .logo {
+    margin-top: 1.875rem;
+    width: 6.25rem; }
+  #header .header-text {
+    max-width: 21.875rem;
+    margin-top: 8.75rem; }
+    #header .header-text .main-title {
+      font-size: 2.125rem; }
+    #header .header-text p {
+      font-size: 0.9375rem;
+      color: #777;
+      line-height: 1.45; }
+    #header .header-text button {
+      margin-top: 1.25rem;
+      margin-bottom: 3.75rem; }
+      #header .header-text button:hover {
+        transition: 1.3s;
+        background: linear-gradient(to right, whitesmoke, #f67C92); }
+
+#sideNav {
+  width: 15.625rem;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #f67C92;
+  z-index: 2;
+  transition: .5s; }
+  #sideNav ul li {
+    margin: 3.125rem 1.25rem; }
+    #sideNav ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff; }
+
+#menuBtn {
+  width: 3.125rem;
+  position: fixed;
+  top: 2.1875rem;
+  right: 4.0625rem;
+  z-index: 32;
+  cursor: pointer; }
+
+/*------About -----------*/
+#about, #offer {
+  padding: 6.25rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  #about .about-left-col, #offer .about-left-col {
+    flex-basis: 50%; }
+    #about .about-left-col img, #offer .about-left-col img {
+      width: 100%; }
+  #about .about-right-col, #offer .about-right-col {
+    flex-basis: 50%;
+    text-align: right; }
+    #about .about-right-col .about-text, #offer .about-right-col .about-text {
+      max-width: 31.25rem;
+      margin-right: 6.25rem;
+      display: inline-block; }
+      #about .about-right-col .about-text .title, #offer .about-right-col .about-text .title {
+        margin: 50px 0 10px;
+        font-size: 1.75rem;
+        font-style: italic; }
+      #about .about-right-col .about-text .author, #offer .about-right-col .about-text .author {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: #797979; }
+
+/* --------feature --------- */
+#features {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  #features .feature-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    #features .feature-row .feature-col {
+      flex-basis: 25%;
+      text-align: center;
+      box-shadow: 2px 4px 31px 1px rgba(184, 180, 180, 0.2);
+      border-radius: 0.625rem;
+      padding: 1.875rem 1.25rem; }
+      #features .feature-row .feature-col img {
+        width: 100px; }
+      #features .feature-row .feature-col h4 {
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 15px; }
+  #features .feature-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 5rem auto 0; }
+    #features .feature-btn .line {
+      text-align: right;
+      margin-right: 25px;
+      display: inline-block; }
+
+/* --------courses --------- */
+#courses {
+  padding: 100px 0; }
+  #courses .course-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    #courses .course-row .course-right-col {
+      flex-basis: 50%; }
+      #courses .course-row .course-right-col img {
+        width: 100%; }
+    #courses .course-row .course-left-col {
+      flex-basis: 50%; }
+      #courses .course-row .course-left-col .course-text {
+        max-width: 21.875rem; }
+        #courses .course-row .course-left-col .course-text button {
+          margin: 1.875rem 0; }
+
+/* --------offer --------- */
+#offer button {
+  margin: 30px 0; }
+
+/* --------contact --------- */
+#contact .contact-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  #contact .contact-row .contact-right-col,
+  #contact .contact-row .contact-left-col {
+    flex-basis: 50%; }
+    #contact .contact-row .contact-right-col .square,
+    #contact .contact-row .contact-left-col .square {
+      padding: 0;
+      margin: 13px 0 5px 0; }
+  #contact .contact-row .contact-right-col img {
+    width: 100%; }
+  #contact .contact-row form {
+    max-width: 21.875rem;
+    margin: 0.625rem 0; }
+    #contact .contact-row form input {
+      width: 100%;
+      padding: 0.75rem 0.625rem;
+      margin-bottom: 0.3125rem;
+      outline: none;
+      box-shadow: none;
+      box-sizing: border-box;
+      border: 2px solid #f67C92; }
+    #contact .contact-row form .btn-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      #contact .contact-row form .btn-box button {
+        flex-basis: 48%;
+        padding: 1.125rem 0; }
+
+/*-------footer -------*/
+#footer {
+  padding: 50px 0 30px; }
+  #footer hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92; }
+  #footer .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #footer .footer-row .footer-left-col {
+      flex-basis: 50%;
+      margin-top: 60px; }
+      #footer .footer-row .footer-left-col .footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        #footer .footer-row .footer-left-col .footer-links .link-title h4 {
+          color: #fab3c4;
+          margin-bottom: 20px; }
+        #footer .footer-row .footer-left-col .footer-links .link-title small {
+          font-size: 13px;
+          color: #777; }
+    #footer .footer-row .footer-right-col {
+      flex-basis: 35%; }
+      #footer .footer-row .footer-right-col .footer-info {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        #footer .footer-row .footer-right-col .footer-info .copyright-text {
+          flex-basis: 40%; }
+          #footer .footer-row .footer-right-col .footer-info .copyright-text .author {
+            color: inherit;
+            text-decoration: none;
+            text-transform: capitalize; }
+        #footer .footer-row .footer-right-col .footer-info .footer-logo {
+          flex-basis: 40%; }
+          #footer .footer-row .footer-right-col .footer-info .footer-logo img {
+            width: 6.25rem; }
+          #footer .footer-row .footer-right-col .footer-info .footer-logo button {
+            padding: 12px 38px;
+            margin-top: 20px;
+            font-size: 10px; }
+
+/*-------social-icons -------*/
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2; }
+  .social-icons img {
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer; }
+    .social-icons img:hover {
+      width: 40px;
+      transition: 1s; }
+
+/*-------------------------RESPONSIVE --------------------------------- */
+@media only screen and (max-width: 770px) {
+  .container {
+    margin-right: 3.125rem;
+    margin-left: 3.125rem; }
+  #menuBtn {
+    width: 2.5rem;
+    right: 3.125rem; }
+  .common-btn {
+    padding: 0.625rem 1rem; }
+  .main-title-section {
+    font-size: 30px; }
+  #header {
+    background-image: none; }
+    #header .logo {
+      margin-top: 1.6875rem;
+      width: 4.375rem; }
+    #header .header-text {
+      margin-top: 6.25rem; }
+      #header .header-text .main-title {
+        font-size: 1.5625rem; }
+  /*-------social-icons  -------*/
+  .social-icons img {
+    width: 0.875rem;
+    margin: 0.9375rem auto; }
+  /*------About -----------*/
+  #about .about-left-col, #offer .about-left-col {
+    flex-basis: 100%; }
+  #about .about-right-col, #offer .about-right-col {
+    flex-basis: 100%;
+    text-align: right; }
+    #about .about-right-col .about-text, #offer .about-right-col .about-text {
+      margin: 3.125rem 3.125rem 0; }
+      #about .about-right-col .about-text .title, #offer .about-right-col .about-text .title {
+        font-size: 1.125rem; }
+      #about .about-right-col .about-text .author, #offer .about-right-col .about-text .author {
+        font-size: 0.9375rem; }
+  /* --------feature --------- */
+  #features .feature-row .feature-col {
+    flex-basis: 100%;
+    margin-bottom: 1.25rem;
+    box-shadow: 0px 0px 31px 0px rgba(184, 180, 180, 0.2);
+    border-radius: 0;
+    padding: 1.25rem 1.25rem; }
+    #features .feature-row .feature-col h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 12px; }
+  #features .feature-btn {
+    margin: 2.5rem auto 0; }
+  /* --------courses --------- */
+  #courses {
+    padding: 50px 0; }
+    #courses .course-row .course-right-col {
+      flex-basis: 100%;
+      margin-top: 4.375rem; }
+    #courses .course-row .course-left-col {
+      flex-basis: 100%; }
+      #courses .course-row .course-left-col .course-text {
+        max-width: 21.875rem; }
+        #courses .course-row .course-left-col .course-text p {
+          text-align: left;
+          line-height: 1.4;
+          font-size: 15px; }
+        #courses .course-row .course-left-col .course-text button {
+          margin: 1.875rem 0; }
+  /* --------contact --------- */
+  #contact .contact-row .contact-right-col,
+  #contact .contact-row .contact-left-col {
+    flex-basis: 100%; }
+  #contact .contact-row .contact-right-col {
+    margin-top: 3.125rem; }
+  #contact .contact-row form input {
+    border: 1px solid #f67C92; }
+  #contact .contact-row form .btn-box button {
+    padding: 0.8125rem 0;
+    border: 1px solid #f67C92; }
+  /*-------footer -------*/
+  #footer .footer-row .footer-left-col {
+    flex-basis: 100%;
+    margin-top: 40px; }
+    #footer .footer-row .footer-left-col .footer-links .link-title {
+      flex-basis: 50%;
+      margin-bottom: 1.875rem; }
+      #footer .footer-row .footer-left-col .footer-links .link-title h4 {
+        margin-bottom: 10px; }
+      #footer .footer-row .footer-left-col .footer-links .link-title small {
+        font-size: 13px;
+        color: #777; }
+  #footer .footer-row .footer-right-col {
+    flex-basis: 100%; }
+    #footer .footer-row .footer-right-col .footer-info .footer-logo img {
+      width: 5rem; } }
